@@ -16,7 +16,7 @@ public class LoginService {
 
     public User createUser(String name) {
         User user = new User();
-        user.setName("Minhaz");
+        user.setName(name);
         userRepository.save(user);
         return user;
     }
